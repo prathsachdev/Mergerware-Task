@@ -1,0 +1,11 @@
+<template name="loans">
+    <h3>Loans</h3>
+    {{#if isBorrower}}
+        <button class="requestLoan">Request Loan</button>
+    {{/if}}
+    <ul>
+        {{#each loans}}
+        <li>{{amount}} - {{status}}</li>
+        {{/each}}
+    </ul>
+</template>

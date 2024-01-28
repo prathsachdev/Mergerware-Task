@@ -1,0 +1,20 @@
+<template name="register">
+    <h2>Register Page</h2>
+    <form>
+        <label for="email">Email:</label>
+        <input type="email" name="registerEmail" required>
+        <br />
+        <label for="password">Password:</label>
+        <input type="password" name="registerPassword" required>
+        <br />
+        <label>Type:</label>
+        <select name="cars" id="cars">
+            <option value="admin">Admin</option>
+            <option value="borrower">Borrower</option>
+            <option value="lender">Lender</option>
+        </select>
+        <br />
+        <button type="submit" class="mt-2 btn btn-lg btn-primary">Register</button>
+        <p>Already have an account? <a href="/login">Login</a></p>
+    </form>
+</template>  
